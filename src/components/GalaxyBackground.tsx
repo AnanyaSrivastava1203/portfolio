@@ -15,8 +15,27 @@ export default function GalaxyBackground() {
     if (!ctx || !starCtx) return;
 
     const pastelColors = ["#fbc4ff", "#c0f0ff", "#fbe4c8", "#e0d1ff", "#ffd6e0"];
-    let particles: any[] = [];
-    let stars: any[] = [];
+    type Particle = {
+  x: number;
+  y: number;
+  radius: number;
+  alpha: number;
+  fade: number;
+  color: string;
+};
+
+type Star = {
+  x: number;
+  y: number;
+  radius: number;
+  opacity: number;
+  fadingIn: boolean;
+  speed: number;
+};
+
+let particles: Particle[] = [];
+let stars: Star[] = [];
+
     const numStars = 150;
 
     const resizeCanvas = () => {

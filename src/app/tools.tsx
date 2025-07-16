@@ -7,7 +7,7 @@ import {
   FaReact, FaNodeJs, FaGitAlt, FaGithub, FaJava, FaPython, FaFigma 
 } from "react-icons/fa";
 import { 
-  SiMongodb, SiTailwindcss, SiTypescript, SiPostman, SiAdobephotoshop, 
+  SiMongodb, SiTailwindcss, SiPostman, SiAdobephotoshop, 
   SiC, SiCplusplus, SiJavascript, SiMysql, SiPhp, SiFirebase, SiNextdotjs,  SiExpress 
 } from "react-icons/si";
 

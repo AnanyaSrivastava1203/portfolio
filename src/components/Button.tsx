@@ -33,7 +33,7 @@ export default function CodingProfiles() {
         className="inline-block mb-12 text-dreamyPink font-semibold text-lg relative transition-all duration-300"
       >
         <span className="relative z-10">
-          View my complete profile on Codeolio 🚀
+          Codeolio Profile🚀
         </span>
         <span className="absolute left-0 bottom-0 h-[2px] w-full bg-pastelBlue opacity-60 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500"></span>
       </motion.a>

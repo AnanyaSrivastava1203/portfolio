@@ -25,7 +25,7 @@ export default function HomePage() {
         >
           <div className="max-w-2xl px-4">
             <h1 className="text-5xl md:text-7xl font-bold text-pastelBlue font-dreamy">
-              Hi, I'm Ananya
+              Hi, I&apos;m Ananya
             </h1>
             <p className="mt-6 text-xl text-lavender">
               A software developer who also paints her imagination ✨
