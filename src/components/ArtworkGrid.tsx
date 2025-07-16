@@ -1,10 +1,17 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const artworks = [
-  { title: "Digital Galaxy", url: "/art/galaxy.png" },
-  { title: "AI Portrait", url: "/art/portrait.png" },
-  { title: "Dreamy Sketch", url: "/art/sketch.png" },
+  { title: "Ciao Canals", url: "/images/ciao-canals.jpg" },
+  { title: "Crimson KeepSake", url: "/images/Crimson-KeepSake.jpg" },
+  { title: "Dior Kissed", url: "/images/dior-kissed.jpg" },
+  { title: "Luna Sol", url: "/images/Luna-sol.jpg" },
+  { title: "Nov 18", url: "/images/Nov-18.jpg" },
+  { title: "Pixie Dust", url: "/images/pixie-dust.jpg" },
+  { title: "The Brooding Rogue", url: "/images/the-brooding-rogue.jpg" },
+  { title: "Vexed Visions", url: "/images/vexed-visions.jpg" },
+  { title: "Whispers of Dusk & Gold", url: "/images/whispers-of-dusk-&-gold.jpg" },
 ];
 
 export default function ArtworkGrid() {
@@ -27,7 +34,15 @@ export default function ArtworkGrid() {
             transition={{ duration: 0.3 }}
             className="bg-white/10 p-4 rounded-xl shadow-lg border border-white/20 backdrop-blur"
           >
-            <img src={art.url} alt={art.title} className="rounded-lg w-full mb-3" />
+            <div className="relative w-full h-64 mb-3 flex items-center justify-center bg-black/20 rounded-lg overflow-hidden">
+              <Image
+                src={art.url}
+                alt={art.title}
+                fill
+                style={{ objectFit: "contain" }}
+                className="rounded-lg"
+              />
+            </div>
             <h3 className="text-dreamyPink font-semibold text-center">{art.title}</h3>
           </motion.div>
         ))}
