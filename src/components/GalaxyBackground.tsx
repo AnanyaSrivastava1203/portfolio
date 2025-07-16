@@ -75,7 +75,7 @@ let stars: Star[] = [];
     const drawParticles = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-      for (let p of particles) {
+      for (const p of particles) {
         ctx.beginPath();
         ctx.globalAlpha = p.alpha;
         ctx.fillStyle = p.color;
