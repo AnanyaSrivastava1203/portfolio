@@ -32,7 +32,7 @@ export default function HomePage() {
             </p>
             <div className="mt-10 flex justify-center gap-6">
               <a
-                href="/Ananya_resume_latest.pdf"
+                href="/ananya_resume_latest.pdf"
                 className="bg-dreamyPink text-darkBlue px-6 py-3 rounded-lg font-semibold hover:scale-105 transition"
               >
                 Download Resume
