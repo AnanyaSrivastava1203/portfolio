@@ -42,7 +42,8 @@ export default function Education() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: index * 0.1 }}
             viewport={{ once: true }}
-            className="bg-white/10 backdrop-blur border border-white/20 rounded-xl p-6 text-center text-softWhite w-full aspect-square flex flex-col justify-center shadow-lg hover:scale-105 transition duration-300"
+            className="bg-white/10 backdrop-blur border border-white/20 rounded-xl p-6 text-center text-softWhite w-full aspect-square flex flex-col justify-center shadow-lg hover:scale-105 hover:shadow-[0_0_20px_rgba(0,195,255,0.5)] transition duration-300"
+
           >
             <h3 className="text-lg font-semibold text-dreamyPink mb-2">
               {edu.title}

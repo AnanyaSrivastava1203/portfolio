@@ -13,6 +13,7 @@ export default function Contact() {
       >
         Contact
       </motion.h2>
+
       <p className="text-softWhite text-center mb-10">
         Let’s build something beautiful together 💌
       </p>
@@ -21,34 +22,41 @@ export default function Contact() {
         <input
           type="text"
           placeholder="Your Name"
-          className="bg-white/10 px-4 py-3 rounded-lg border border-white/20 text-white"
+          className="bg-white/10 px-4 py-3 rounded-lg border border-white/20 text-white backdrop-blur-md focus:outline-none focus:ring-2 focus:ring-pastelBlue/60 shadow-[0_0_8px_#ffffff20]"
         />
         <input
           type="email"
           placeholder="Your Email"
-          className="bg-white/10 px-4 py-3 rounded-lg border border-white/20 text-white"
+          className="bg-white/10 px-4 py-3 rounded-lg border border-white/20 text-white backdrop-blur-md focus:outline-none focus:ring-2 focus:ring-pastelBlue/60 shadow-[0_0_8px_#ffffff20]"
         />
         <textarea
           rows={5}
           placeholder="Your Message"
-          className="bg-white/10 px-4 py-3 rounded-lg border border-white/20 text-white"
+          className="bg-white/10 px-4 py-3 rounded-lg border border-white/20 text-white backdrop-blur-md focus:outline-none focus:ring-2 focus:ring-pastelBlue/60 shadow-[0_0_8px_#ffffff20]"
         ></textarea>
+
         <button
           type="submit"
-          className="bg-pastelBlue text-darkBlue px-6 py-3 rounded-lg font-semibold hover:scale-105 transition"
+          className="bg-pastelBlue text-darkBlue px-6 py-3 rounded-lg font-semibold hover:scale-105 transition duration-300 shadow-[0_0_12px_#5befff80] hover:shadow-[0_0_20px_#5befffcc]"
         >
           Send Message
         </button>
       </form>
 
-      <div className="mt-8 flex justify-center gap-6 text-2xl text-pastelBlue">
-        <a href="mailto:sriananya1203@gmail.com" target="_blank" rel="noopener noreferrer">
+      <div className="mt-10 flex justify-center gap-6 text-2xl text-pastelBlue">
+        <a
+          href="mailto:sriananya1203@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-white transition duration-300 hover:drop-shadow-[0_0_8px_white]"
+        >
           <FaEnvelope />
         </a>
         <a
           href="https://www.linkedin.com/in/ananyasrivastava20040912/"
           target="_blank"
           rel="noopener noreferrer"
+          className="hover:text-white transition duration-300 hover:drop-shadow-[0_0_8px_white]"
         >
           <FaLinkedin />
         </a>
@@ -56,6 +64,7 @@ export default function Contact() {
           href="https://github.com/AnanyaSrivastava1203"
           target="_blank"
           rel="noopener noreferrer"
+          className="hover:text-white transition duration-300 hover:drop-shadow-[0_0_8px_white]"
         >
           <FaGithub />
         </a>
@@ -63,6 +72,7 @@ export default function Contact() {
           href="https://www.instagram.com/soulfully_artistic?igsh=NzF1a2l5YXpkcm93"
           target="_blank"
           rel="noopener noreferrer"
+          className="hover:text-white transition duration-300 hover:drop-shadow-[0_0_8px_white]"
         >
           <FaInstagram />
         </a>

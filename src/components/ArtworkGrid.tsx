@@ -21,29 +21,31 @@ export default function ArtworkGrid() {
         initial={{ opacity: 0, y: -40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="text-4xl font-bold text-center text-pastelBlue mb-12"
+        className="text-4xl font-bold text-center text-pastelBlue mb-12 drop-shadow-md"
       >
         Artwork
       </motion.h2>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
         {artworks.map((art, index) => (
           <motion.div
             key={index}
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
-            className="bg-white/10 p-4 rounded-xl shadow-lg border border-white/20 backdrop-blur"
+            className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-4 shadow-lg hover:shadow-pastelBlue/30 transition-shadow"
           >
-            <div className="relative w-full h-64 mb-3 flex items-center justify-center bg-black/20 rounded-lg overflow-hidden">
+            <div className="relative w-full h-64 mb-4 rounded-xl overflow-hidden shadow-inner">
               <Image
                 src={art.url}
                 alt={art.title}
                 fill
-                style={{ objectFit: "contain" }}
-                className="rounded-lg"
+                style={{ objectFit: "cover" }}
+                className="rounded-xl"
               />
             </div>
-            <h3 className="text-dreamyPink font-semibold text-center">{art.title}</h3>
+            <h3 className="text-center text-lg font-semibold text-dreamyPink tracking-wide">
+              {art.title}
+            </h3>
           </motion.div>
         ))}
       </div>

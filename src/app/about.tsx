@@ -35,7 +35,7 @@ export default function About() {
         initial={{ opacity: 0, y: -40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="text-4xl font-bold text-center text-pastelBlue mb-12"
+        className="text-4xl font-bold text-center text-[#5befff] mb-12"
       >
         About Me
       </motion.h2>

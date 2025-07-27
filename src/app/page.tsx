@@ -24,11 +24,17 @@ export default function HomePage() {
           className="min-h-screen flex items-center justify-center text-center"
         >
           <div className="max-w-2xl px-4">
-            <h1 className="text-5xl md:text-7xl font-bold text-pastelBlue font-dreamy">
-              Hi, I&apos;m Ananya
+            <h1 className="text-5xl md:text-7xl font-bold font-dreamy">
+              Hi, I&apos;m{" "}
+              <span
+                style={{ color: "#00cfff", textShadow: "0 0 18px #00cfff88" }}
+              >
+                Ananya
+              </span>
             </h1>
+
             <p className="mt-6 text-xl text-lavender">
-              A software developer who also paints her imagination ✨
+              A software developer who also paints her imagination
             </p>
             <div className="mt-10 flex justify-center gap-6">
               <a

@@ -19,7 +19,7 @@ export default function ProjectCard({ title, desc, tech, link }: ProjectProps) {
       className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl p-6 shadow-lg flex flex-col justify-between"
     >
       <div>
-        <h3 className="text-xl font-bold text-dreamyPink">{title}</h3>
+        <h3 className="text-xl font-bold text-[#5befff]">{title}</h3>
         <p className="text-softWhite mt-2">{desc}</p>
         <div className="mt-4 flex flex-wrap gap-2">
           {tech.map((item, idx) => (
@@ -39,7 +39,7 @@ export default function ProjectCard({ title, desc, tech, link }: ProjectProps) {
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-pastelBlue hover:text-dreamyPink transition"
+            className="inline-flex items-center gap-2 text-pastelBlue hover:text-dreamyPink transition duration-300 hover:drop-shadow-[0_0_6px_rgba(255,255,255,0.6)]"
           >
             <FaGithub className="text-lg" />
             <span className="font-semibold">View Code</span>

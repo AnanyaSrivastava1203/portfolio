@@ -7,6 +7,9 @@ import {
   SiGeeksforgeeks,
 } from "react-icons/si";
 
+
+// the coding profile section
+
 export default function CodingProfiles() {
   return (
     <section
