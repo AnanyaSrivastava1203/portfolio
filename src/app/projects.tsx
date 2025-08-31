@@ -26,18 +26,40 @@ const projects = [
     desc: "Hourly task reminder system via email using PHP & CRON.",
     tech: ["PHP", "CRON", "Email API"],
     link: "https://github.com/AnanyaSrivastava1203/task-scheduler-AnanyaSrivastava1203"
+  },
+  {
+    title: "Snake Game",
+    desc: "A simple snake game built with JavaScript.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    link: "https://github.com/AnanyaSrivastava1203/snake_game"
+  },
+  {
+    title: "Temperature Converter",
+    desc: "Web app to convert temperatures between units.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    link: "https://github.com/AnanyaSrivastava1203/Temperature_Converter"
+  },
+  {
+    title: "Todolu",
+    desc: "A task management app to organize daily activities.",
+    tech: ["React", "Node", "MongoDB", "Firebase"],
+    link: "https://github.com/AnanyaSrivastava1203/todolu"
+  },
+  {
+    title: "EduMinds",
+    desc: "An educational platform connecting learners and resources.",
+    tech: ["MERN Stack"],
+    link: "https://github.com/AnanyaSrivastava1203/EduMinds"
   }
 ];
-
 
 export default function Projects() {
   return (
     <SectionWrapper id="projects" title="Projects">
       <div className="grid md:grid-cols-2 gap-6">
         {projects.map((project, idx) => (
-  <ProjectCard key={idx} {...project} />
-))}
-
+          <ProjectCard key={idx} {...project} />
+        ))}
       </div>
     </SectionWrapper>
   );
